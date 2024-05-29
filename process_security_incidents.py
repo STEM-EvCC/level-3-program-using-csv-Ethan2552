@@ -17,6 +17,6 @@ nuRows = [row + [colVal] for row in data[1:]]
 with open(outputCsv, mode = 'w', newline= '') as outfile:
     writer = csv.writer(outfile)
     writer.writerow(header)
-    writer.writerows(nuRow)
+    writer.writerows(nuRows)
 
     
